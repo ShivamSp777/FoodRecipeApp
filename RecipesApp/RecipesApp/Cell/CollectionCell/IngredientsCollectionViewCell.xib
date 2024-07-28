@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IngredientsCollectionViewCell" id="gTV-IL-0wX" customClass="IngredientsCollectionViewCell" customModule="RecipesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="176" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="176" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spp-X7-9Og">
+                        <rect key="frame" x="5" y="5" width="166" height="125"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L0n-e0-OLx">
+                                <rect key="frame" x="50.666666666666657" y="8" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="8mw-DS-hgd"/>
+                                    <constraint firstAttribute="height" constant="65" id="gWJ-7Q-UlR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sugar Syrup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0H-Di-NI3">
+                                <rect key="frame" x="50.666666666666657" y="85" width="65" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="E36-af-Kx4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="y0H-Di-NI3" firstAttribute="top" secondItem="L0n-e0-OLx" secondAttribute="bottom" constant="12" id="1Lj-5K-5iZ"/>
+                            <constraint firstItem="L0n-e0-OLx" firstAttribute="top" secondItem="spp-X7-9Og" secondAttribute="top" constant="8" id="Bwk-B8-Skb"/>
+                            <constraint firstItem="L0n-e0-OLx" firstAttribute="centerX" secondItem="spp-X7-9Og" secondAttribute="centerX" id="S2q-QS-lIo"/>
+                            <constraint firstItem="y0H-Di-NI3" firstAttribute="trailing" secondItem="L0n-e0-OLx" secondAttribute="trailing" id="lT1-3E-LwO"/>
+                            <constraint firstItem="y0H-Di-NI3" firstAttribute="leading" secondItem="L0n-e0-OLx" secondAttribute="leading" id="xFc-lZ-zZp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="spp-X7-9Og" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="1Ly-sR-JOA"/>
+                <constraint firstAttribute="bottom" secondItem="spp-X7-9Og" secondAttribute="bottom" constant="5" id="AiK-6G-R8k"/>
+                <constraint firstItem="spp-X7-9Og" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="wqP-A9-J1D"/>
+                <constraint firstAttribute="trailing" secondItem="spp-X7-9Og" secondAttribute="trailing" constant="5" id="yJd-zV-L3q"/>
+            </constraints>
+            <size key="customSize" width="176" height="135"/>
+            <connections>
+                <outlet property="IngredientsImage" destination="L0n-e0-OLx" id="F8Y-i2-7fS"/>
+                <outlet property="IngredientsLabel" destination="y0H-Di-NI3" id="wEi-wa-Rhj"/>
+            </connections>
+            <point key="canvasLocation" x="48.854961832061065" y="48.943661971830991"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
